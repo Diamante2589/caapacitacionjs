@@ -1,11 +1,16 @@
-let num1=10;
-            let num2= parseInt("5");
-            let num3=15;
-            let resultado= (num1*num2);
+/*let edad=20;
+
+    if (edad >=21){
+        document.write("la persona es mayor de edad  <br>")
+        document.write("puedes obtener tu carnet");
+    }
+
+    else document.write("aun no tienes edad");
+        document.write("<br><br>");
+        document.write("acabamos de evaluar la edad del candidato");
+
+        condicional if
+   */
 
 
-
-        
-
-
-            document.write(typeof(num2));
+     
