@@ -89,3 +89,46 @@
     
             document.write(Math.sqrt(number));
             */
+/*
+         //dowhile
+
+         let number;
+         // se declara la variable y reserva el espacio
+
+         do{
+           
+            number=prompt(`introduce un NUMERO POSITIVO`);
+
+         }while(number<0)
+            
+                document.write(Math.sqrt(number));
+         
+         */
+
+        //exercise 
+        
+        
+        //programa aleatorio con while
+         /*
+         let number= prompt(`introduce un numero entre 1 y 100`);
+         let numberRandom= parseInt(Math.random()*100);
+         let intentos=0;
+
+         while (numberRandom != number){
+            
+            intentos++;
+
+             if(number < numberRandom)
+                alert(`Ingresa un numero mas alto`);
+
+             if(number > numberRandom)
+                alert(`Ingresa un numero mas  bajo `) ;  
+
+              number=prompt("Vuelve a ingresar otro numero") ; 
+         }
+
+         document.write(`Has encontrado el numero en ${intentos} intentos`);
+
+*/
+
+         
