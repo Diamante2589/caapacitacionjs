@@ -128,7 +128,196 @@
          }
 
          document.write(`Has encontrado el numero en ${intentos} intentos`);
+*/
+         //bucle for
+/*
+         for(let contador=0; contador<10;contador++){
+            document.write(`numero: ${contador} <br>`);
+            document.write(`_____________________<br>`);
+         }
+
+         document.write(`Ha terminado el bucle `);
 
 */
 
-         
+        //exercise con dos variables;
+        /*
+        for(let x=1, y=2; x<10; x++,y++){
+            document.write(`${x} es menor que ${y} <br>`);
+            document.write(`____________________________<br>`);
+
+        }
+*/
+/*
+        let number1=prompt(`introduce el inicio del bloque`);
+        let number3=prompt(`introduce el final del bucle`);
+        
+
+        for(let x=number1 ;x < number3;x++){
+            document.write(`el numero es:${x}<br>`);
+        }
+
+         */
+        
+        //FACTORIAL
+/*
+        let number1=prompt("ingresar un numero de 1 al 20");
+        let resultado;
+        
+
+
+        for(resultado=number1;number1>1; number1--){
+            
+           resultado=resultado*(number1-1);
+           document.write(`El resultado es ${resultado} <br>`);
+        }
+
+*/
+
+        //excercise entero
+/*
+        let number=parseInt(prompt("ingrese un numero"));
+        let resultado=0;
+
+        for(let x=0; x < number; x++){
+            resultado=x;
+            document.write(`${resultado},`);
+        }
+
+        document.write(`se termino`);
+
+        */
+
+        /*
+        exercise modulo
+        let number=prompt(`ingrese un numero`);
+        let resultado;
+
+        for(let x=0; x<number;x++){
+            if(x % 2==0){
+                resultado=x;
+                alert(`${resultado} \n`);
+            }
+        }
+
+        document.write(`finish the exercise`);
+*/
+        //tabla de multiplicar
+/*
+        let number=parseInt(prompt(`ingrese un numero`));
+        let resultado;
+
+        for(let x=0; x<=10;x++){
+            resultado=(number * x);
+            document.write(`${number} X ${x} = ${resultado} <br>`);
+
+        }
+            document.write(`finish the exercise`);
+*/
+    
+//multiplo
+
+ 
+        //lettter repeat 
+/*
+        let number=prompt(`ingrese un numero`);
+        let letter=prompt(`ingrese una letra`);
+      
+
+        for(let x=0; x<number;x++){
+                
+                document.write(`${letter} <br>`);
+            }
+
+            document.write(`Termino la operacion`);
+
+          */  
+        //conteo reloj
+/*
+        let izq, der;
+                for(izq = 0; izq < 2; izq++){
+                    //cuando hay un for anidado el for de  afuera se cumple cuando se cumpla el for que esta adentro,
+                    //en este ejemplo imprime el 0 y espera hasta que el for que esta adentro se deje de cumplir
+                    for(der=0; der < 5; der++){
+                     //imprime 0,1,2,3 hasta 4 y cuando ello pasa , se pasa al for y vuelve y empieza de nuevo   
+
+                console.log(izq+" : "+der)
+                }
+            }
+
+*/
+
+            //imprimir traiangulo
+            /*
+            let alto, ancho,  linea, cadena;
+                alto = parseInt(prompt("Teclea un número de 1 a 10"));
+                for ( linea = 0; linea < alto; linea++){
+                    cadena=''
+                    for(ancho = 0; ancho <= linea; ancho++){
+                        cadena += "*";
+                        }
+                    console.log( cadena+ "\n");
+}
+*/
+            //suma de numeros
+/*
+            let number=parseInt(prompt(`ingrese un numero entero de 0 a 10`));
+            let resultado=0;
+            let x;
+
+             for(x=0; x <=number; x++){
+               
+                 
+                 resultado += x;
+             }
+
+
+             document.write(`los numeros enteros de 0 a ${number} suman ${resultado}<br>`)
+
+*/
+/*
+
+                    let max, suma, ctrl;
+                    max = parseInt(prompt("teclea un entero positivo"));
+                    suma = 0;
+                    for (ctrl = 0; ctrl <= max; ctrl++)
+                    {
+                        suma += ctrl;
+                    }
+                    alert("Los  números enteos de 0 a "+max+" suman "+suma);
+
+*/
+
+//  media aritmetica
+/*
+                let x;
+                let number1=parseInt(prompt(`ingrese el primer numero`));
+                let number2=parseInt(prompt(`ingrese el segundo numero`));
+                let number3=parseInt(prompt(`ingrese el tercer numero`));
+                let number4=parseInt(prompt(`ingrese el cuarto numero`));
+                let resultado;
+
+
+                for(x=0; x<=4; x++){
+                    resultado=(number1+number2+number3+number4)/4
+                    
+
+                }
+
+                document.write(`La media aritmetica de ${number1}, ${number2}, ${number3}, ${number4} es ${resultado}`)
+*/
+
+//   Arreglos
+
+            
+                    
+
+
+
+
+
+
+
+        
+
+       
