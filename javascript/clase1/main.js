@@ -309,15 +309,123 @@
 
 //   Arreglos
 
+            //let number=[7,9,12,10,15,23,56,90];
+
+
+           /*
+
+               for(x=0; x<number.length; x++){
+                 document.write(`${number[x]} <br>`);
+               }     
+
             
+                */
+               
+               //nueva forma for of por ecmascript
+/*
+               for(let x  of number){
+                document.write(`${x}<br>`);
+               }
+
+*/
+
+               //verificar email
+/*
+               let email=`nestorebernalpardo@gmail.com`;
+               let letra;
+               let arroba=0;
+
+                for(letra of email) {
+                    if(letra=="@") arroba++;
+                                                         
+                }
+
+                if(arroba==1){
+                    document.write(`El correo es valido`);
+                } document.write(`El correo no es valido`);
+
+                
+          */       
                     
+                    //exercise of array
+/*
+                    let number=[];
+                    let numero;
 
+                    for (let x =0; x<5;x++){
+                        number[x]=parseInt(prompt(`ingresa el  numero ${x} `));
 
+                        //con esta instruccion cada numero que ingresa por el prompt , se guarda en el arreglo
+                    }
 
+                    document.write(`El resultado de  multiplicar los numeros por 5 es <br>`);
 
+            
+                     for(numero of number){
+                        //con este for of la variable numero guarda los numeros guardados en number
+                        document.write(numero + " x 5 =" + numero *5 + "<br>");
+                     }                           
 
+       */
 
+                     //bucle for in
 
-        
+                     //crear mi objeto
+                  // se crea un for of para mirar un objeto, y compararlo con for in
+                    /*let coche={
+                        color:"red",
+                        cilindraje:1700,
+                        puertas:4,
+                        ruedas:4
+                     };
 
-       
+                     let keysValue="";
+
+                      for(let [k,v] of Object.entries(coche)){
+                        keysValue+=k + " : "+ v;
+                        keysValue+=" ; ";
+                      }
+                      document.write(`${keysValue}  <br>`);
+                         //for in 
+                        
+                        for(let propiedad in coche){
+                            document.write(`${propiedad} " "  ${coche[propiedad ]}<br>`);
+                        }
+
+*/
+/*
+                         let mail=prompt(`ingrese su correo electronico`);
+                         let arroba=false;
+                         
+                         for(x=0; x<mail.length; x++){
+                              if(mail[x]=="@"){
+                                arroba=true;
+                              }
+                            
+                         }
+
+                         if(arroba){
+                            document.write(`El mail es correcto`);
+                         }else{
+                            document.write(`El email es incorrecto`);
+                         }
+
+*/
+                 //exercise de paises
+
+                 let city=[];
+                 let num=0;
+
+                 do{
+
+                    num+=1;
+
+                    city[num]=prompt("ingrese la ciudad que desea");
+
+                 } while(city[num]!=null);
+
+                 for(let x=0; x<city.length;x++){
+                    if(city[x]=="España"||city[x]=="españa" || city[x]=="ESPAÑA"){
+                        document.write("España encontrado");
+                    }
+                 }
