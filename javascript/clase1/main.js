@@ -412,7 +412,7 @@
 
 */
                  //exercise de paises
-
+/*
                  let city=[];
                  let num=0;
 
@@ -427,5 +427,24 @@
                  for(let x=0; x<city.length;x++){
                     if(city[x]=="España"||city[x]=="españa" || city[x]=="ESPAÑA"){
                         document.write("España encontrado");
+
+                        break;
+
                     }
+                    document.write(`${city[x]} <br> `);
                  }
+
+        */
+       
+                 //CREAR UN OBJETO
+
+                 let coche={
+                    color:"red",
+                    cilindraje:1700,
+                    puertas:4,
+                    ruedas:4
+                 };
+
+                 console.log(coche);
+
+                 
