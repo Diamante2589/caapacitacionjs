@@ -683,7 +683,7 @@ function movement(){
 }
 
 */
-
+/*
 const boton=document.querySelector('.boton');
 
 
@@ -700,3 +700,21 @@ boton.addEventListener('mouseenter', () => {
     boton.style.backgroundcolor='blue';
 
 })
+*/
+/*
+const barra=document.querySelector(".busqueda")
+
+    barra.addEventListener('input', (e)=>{
+        if(e.target.value=== "")
+
+        console.log("fallo la validacion");
+
+
+
+    })
+
+*/
+
+
+
+   
