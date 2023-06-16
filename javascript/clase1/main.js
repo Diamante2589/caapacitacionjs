@@ -437,7 +437,7 @@
         */
        
                  //CREAR UN OBJETO
-
+/*
                  let coche={
                     color:"red",
                     cilindraje:1700,
@@ -447,4 +447,237 @@
 
                  console.log(coche);
 
-                 
+                 */
+
+                 //DEFINICION DE FUNCION
+//Function statement
+                /* function sumar(){
+                    console.log(2+2);
+                 }
+
+
+                 sumar();
+*/
+
+//Function expression
+/*
+         const sumar2= function(){
+            console.log(2+2);
+         }
+
+
+         sumar2();
+*/
+/*
+const numero=5;
+const numero1="5";
+
+
+console.log(parseInt(numero));
+console.log(numero.toString());
+*/
+/*function sumar(a,b){
+    console.log(a+b);
+ }
+
+
+ sumar(200 , 100);
+*/
+/*
+ function saludar(nombre, apellido){
+    console.log(`hola mi  ${nombre} ,   ${apellido}`);
+ 
+ }
+
+ saludar("nestor", "bernal");
+     */
+/*
+// DEFAULT
+ function saludar(nombre, apellido=" "){
+    console.log(`hola mi  ${nombre} ,   ${apellido}`);
+ 
+ }
+
+ saludar("nestor");
+ */ 
+     //comunicacion de funciones;
+/*
+
+     iniciarApp();
+
+
+     function iniciarApp(){
+        console.log(`iniciando app....`);
+        desdeLaSegundaFuncion();
+     }
+
+
+     function desdeLaSegundaFuncion(){
+        console.log(`desde la segunda funcion`);
+     }
+
+     */
+
+     // funciones que retornan valores
+
+/*
+     function sumar(a,b){
+        return a+b
+     }
+
+     const resultado=sumar(2,9);
+
+     console.log(resultado);
+     */
+    //funtion advanced
+/*
+    let total=0
+
+    function agregarCarrito(precio){
+        return total +=precio;
+    };
+
+    function calcularImpuesto(total){
+       return total * 1.19;
+    };
+
+
+    total=agregarCarrito(1000);
+
+
+    const totalPagar=calcularImpuesto(total);
+
+   
+    console.log(`El subtotal es de ; ${total} y el total a pagar es de ${totalPagar}`);*/
+
+    //funciones objeto
+
+    /*
+    const reproductor={
+        reproducir:function(id){
+            console.log(`reproduciendo la cancion numero ${id}`);
+        },
+         pausar:function(accion){
+             console.log(`pausando reproduccion ${accion}`);
+         },
+
+         borrar:function(no){
+            console.log(`borrando reproduccion ${no}`);
+        }
+
+    }
+    
+    reproductor.reproducir(30);
+    reproductor.pausar("pausando");
+    reproductor.borrar(6);
+*/
+/*
+   const aprendiendo1=function(){
+    console.log("aprendiendo js");
+   }
+    
+ 
+
+
+   const aprendiendo2=()=>("aprendiendo js en casa");
+
+    
+   console.log (aprendiendo2());
+
+*/
+
+/*const header=document.getElementsByClassName("logo");
+
+console.log(header);
+*/
+
+//getElementByClassName
+/*const container=document.getElementsByClassName("container");
+console.log(container);
+*/
+//querySelector()
+/*const selector=document.querySelector(".container");
+
+console.log(selector);
+*/
+
+//entrar al text
+/*
+const tex=document.querySelector(".titulo-principal").innerHTML;
+
+console.log(tex);
+
+
+document.querySelector(".titulo-principal").innerHTML="LLEGO LA HORA";
+*/
+
+// entrar al css
+/*
+ const color=document.querySelector("h1");
+
+ color.style.backgroundColor="red";
+
+ */
+/*
+ const navegacion=document.querySelector("nav");
+
+ //console.log(navegacion.chilNodes);
+ console.log(navegacion.children[1].children[2]);
+
+
+ //document.querySelector("nav").innerHTML;
+
+ //console.log(navegacion);
+
+ */
+
+ //GENERANDO HTML CON JAVASCRIPT
+/*
+ const enlace=document.createElement("A");
+
+ enlace.textContent="nuevo enlace";
+
+ enlace.href="/mienlace";
+
+ enlace.target="blank";
+
+ console.log(enlace);
+*/
+//lo agrega aal final
+// const navegacion=document.querySelector(".navegacion");
+
+ //navegacion.appendChild(enlace);
+
+
+ //para ingresar antes
+
+ //para ingresar antes es insertbefore
+
+
+ //creacion
+
+ 
+/*
+
+ const contenido=document.createElement("ul");
+ contenido.classList.add("contenido_list");
+
+ const listica=document.createElement("li");
+ listica.classList.add("listica-nuevo");
+ listica.textContent="miinicio";
+
+
+contenido.appendChild(listica)
+
+document.body.appendChild(contenido);
+*/
+
+const btnFlotante=document.querySelector(".btn-flotante");
+const footer=document.querySelector(".footer");
+
+btnFlotante.addEventListener('click',movement);
+
+
+function movement(){
+    console.log("diste click compañero");
+}
