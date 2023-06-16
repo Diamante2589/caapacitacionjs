@@ -671,7 +671,7 @@ contenido.appendChild(listica)
 
 document.body.appendChild(contenido);
 */
-
+/*
 const btnFlotante=document.querySelector(".btn-flotante");
 const footer=document.querySelector(".footer");
 
@@ -681,3 +681,22 @@ btnFlotante.addEventListener('click',movement);
 function movement(){
     console.log("diste click compañero");
 }
+
+*/
+
+const boton=document.querySelector('.boton');
+
+
+boton.addEventListener('mouseout', () => {
+
+    console.log('entrando de la navegacion')
+    boton.style.backgroundcolor='red';
+
+})
+
+boton.addEventListener('mouseenter', () => {
+
+    console.log('saliendo de la navegacion')
+    boton.style.backgroundcolor='blue';
+
+})
