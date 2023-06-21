@@ -45,13 +45,40 @@ function leerDatos(curso){
  // los (...)spreadoperator es para hacer copia
         articulosCarrito=[...articulosCarrito,infoCurso] ;
         console.log(articulosCarrito);
+        carritoHTML();
+       
 
-        //muestra el carrito en el html
+ }
+        
 
         function carritoHTML(){
+            //limpiar el carrito
+
+            limpiarHTML()//con esta istruccion primero limpiamos, para seguir añadiendo
+            //recorre el carrito y genera el html
             articulosCarrito.forEach( curso => {
                 const row=document.createElement('tr')
                 //vamos a utilizar un html
+                row.innerHTML=`
+                <td>
+                    ${curso.titulo}
+                </td>
+                `;//estamos creando  el html, pero no lo hemos agregado a que se muestre, si recuerdas creamos un contenedor carrito y este contiene 
+                //tbody
+                
+                //Agrega el HTML del carrito en el tbody
+                contenedorCarrito.appendChild(row);//vamos a agregar cada row en cada iteracion
             })
         }
-}
+        //elimina los cursos del tbody
+
+        function limpiarHTML(){
+            //forma lenta de html
+            //contenedorCarrito.innerHTML='';
+
+            while(contenedorCarrito.firstChild){//mientras el contenedor carrito tiene por lo menos un elemento adentro
+                //se sigue ejecutando y cuando este limpio ya no ejecuta
+                contenedorCarrito.removeChild(contenedorCarrito.firstChild);
+            }
+        }
+
